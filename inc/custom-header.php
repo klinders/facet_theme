@@ -8,7 +8,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package facet_theme
+ * @package Facet_Theme
  */
 
 /**

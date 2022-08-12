@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package facet_theme
+ * @package Facet_Theme
  */
 
 if ( ! function_exists( 'facet_theme_posted_on' ) ) :

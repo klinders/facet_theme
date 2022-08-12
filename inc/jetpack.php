@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package facet_theme
+ * @package Facet_Theme
  */
 
 /**
@@ -33,7 +33,7 @@ function facet_theme_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'facet_theme-style',
+				'stylesheet' => 'facet-themestyle',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',

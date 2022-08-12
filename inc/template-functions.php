@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package facet_theme
+ * @package Facet_Theme
  */
 
 /**

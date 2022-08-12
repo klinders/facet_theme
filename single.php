@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package facet_theme
+ * @package Facet_Theme
  */
 
 get_header();

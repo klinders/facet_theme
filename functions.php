@@ -1,15 +1,15 @@
 <?php
 /**
- * facet_theme functions and definitions
+ * Facet_Theme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package facet_theme
+ * @package Facet_Theme
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if ( ! defined( 'facet_theme_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( 'facet_theme_VERSION', '1.0.0' );
 }
 
 /**
@@ -23,7 +23,7 @@ function facet_theme_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on facet_theme, use a find and replace
+		* If you're building a theme based on Facet_Theme, use a find and replace
 		* to change 'facet_theme' to the name of your theme in all the template files.
 		*/
 	load_theme_textdomain( 'facet_theme', get_template_directory() . '/languages' );
@@ -138,10 +138,10 @@ add_action( 'widgets_init', 'facet_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function facet_theme_scripts() {
-	wp_enqueue_style( 'facet_theme-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'facet_theme-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'facet-themestyle', get_stylesheet_uri(), array(), facet_theme_VERSION );
+	wp_style_add_data( 'facet-themestyle', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'facet_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'facet-themenavigation', get_template_directory_uri() . '/js/navigation.js', array(), facet_theme_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -176,3 +176,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Load WooCommerce compatibility file.
+ */
+if ( class_exists( 'WooCommerce' ) ) {
+	require get_template_directory() . '/inc/woocommerce.php';
+}
