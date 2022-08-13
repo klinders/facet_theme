@@ -1,6 +1,6 @@
 .main-navigation {
-	display: block;
-	width: 100%;
+	display: flex;
+	padding: 2rem;
 
 	ul {
 		display: none;
@@ -25,7 +25,7 @@
 
 				&:hover > ul,
 				&.focus > ul {
-					display: block;
+					display: flex;
 					left: auto;
 				}
 			}
@@ -58,7 +58,7 @@
 	}
 
 	a {
-		display: block;
+		display: flex;
 		text-decoration: none;
 	}
 
@@ -83,6 +83,31 @@
 
 	.main-navigation ul {
 		display: flex;
+		flex-direction: row;
+
+		li > a {
+			background-color: $color__background-body;
+			color: $color__text-main;
+			
+			border-color: $color__border-button;
+			border-width: 1px;
+			border-style: solid;
+
+			font-weight: bold;
+			text-transform: uppercase;
+
+			padding: 1rem;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			border-top-left-radius: 1.5rem;
+			border-bottom-right-radius: 1.5rem;
+			margin-right: 2rem;
+
+			&:hover, &:focus {
+				border-color: $color__border-button-hover;
+				background-color: $color__background-button;
+			}
+		}
 	}
 }
 
@@ -106,4 +131,30 @@
 		text-align: end;
 		flex: 1 0 50%;
 	}
+}
+
+.site-header {
+	background-color: transparent;
+
+	& .full-height{
+		height: 100vh;
+	}
+
+	.header-inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.site-branding {
+			padding: 2rem;
+		}
+	}
+}
+
+.site-main {
+	background-color: $color__background-body;
+}
+
+.site-footer {
+	background-color: $color__background-body;
 }
