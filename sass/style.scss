@@ -50,36 +50,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 
-// Import variables and mixins.
-@import "abstracts/abstracts";
+// Import tailwind
 
-/*--------------------------------------------------------------
-# Generic
---------------------------------------------------------------*/
+@tailwind base;
 
-/* Normalize
---------------------------------------------- */
-@import "generic/normalize";
+@tailwind components;
 
-/* Box sizing
---------------------------------------------- */
-@import "generic/box-sizing";
+@tailwind utilities;
 
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
-@import "base/base";
+// Import parts
+@import "parts/parts";
 
-/*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
-@import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
-//@import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
-
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-@import "components/components";
 
 /*--------------------------------------------------------------
 # Plugins
@@ -97,6 +78,3 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------- */
 @import "utilities/accessibility";
 
-/* Alignments
---------------------------------------------- */
-@import "utilities/alignments";

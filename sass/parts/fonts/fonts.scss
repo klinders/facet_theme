@@ -1,0 +1,97 @@
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-Plain.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B2ExtraLight.otf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B2ExtraLightItalic.otf);
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B3Light.otf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B3LightItalic.otf);
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B4SemiLight.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B4SemiLightItalic.otf);
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B5Plain.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B5PlainItalic.otf);
+    font-style: italic;
+    font-weight: 500;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B6SemiBold.otf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B6SemiBoldItalic.otf);
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B7Bold.otf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B7BoldItalic.otf);
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B8ExtraBold.otf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B8ExtraBoldItalic.otf);
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B9Black.otf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: TheSans;
+    src: url(../fonts/TheSans-B9Black.otf);
+    font-weight: 900;
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6, .font-thesans{
+    font-family: TheSans, Arial, Helvetica, sans-serif;
+}
