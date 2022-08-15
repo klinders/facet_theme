@@ -12,7 +12,7 @@
 get_header('home');
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main"> 
 
 		<?php
 		while ( have_posts() ) :

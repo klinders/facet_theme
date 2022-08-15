@@ -20,13 +20,13 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('no-sidebar'); ?>>
+<body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'facet_theme' ); ?></a>
 
 	<header id="masthead" class="site-header full-height">
-		<div class="header-inner">
+		<div class="site-header-inner" id="site-navigation">
 			<div class="site-branding">
 				<?php
 				the_custom_logo();
@@ -38,16 +38,16 @@
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 	
-			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'facet_theme' ); ?></button>
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					)
-				);
-				?>
-			</nav><!-- #site-navigation -->
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<i data-feather="menu"></i>
+			</button>
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				)
+			);
+			?>
 		</div>
 	</header><!-- #masthead -->

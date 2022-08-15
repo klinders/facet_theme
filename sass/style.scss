@@ -49,18 +49,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+// Import Normalize
+@import "utilities/normalize";
 
-// Import tailwind
+@import "utilities/box-sizing";
 
-@tailwind base;
 
-@tailwind components;
+// Add the variables
+@import "variables";
 
-@tailwind utilities;
+// Add the fonts
+@import "fonts";
 
-// Import parts
+
+// Add all the parts
+
 @import "parts/parts";
-
 
 /*--------------------------------------------------------------
 # Plugins
@@ -77,4 +81,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Accessibility
 --------------------------------------------- */
 @import "utilities/accessibility";
+
+
 

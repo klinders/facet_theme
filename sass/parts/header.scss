@@ -1,0 +1,51 @@
+.site .site-header {
+    width: 100%;
+
+    &.full-height {
+        height: 100vh;
+    }
+
+    .site-header-inner {
+        display: grid;
+        grid-template-areas: "brand toggle" "menu menu";
+
+        .site-branding {
+            width: 40%;
+            grid-area: brand;
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            opacity: 60%;
+            &:hover, &:focus {
+                opacity: 100%;
+            }
+        }
+        button {
+            grid-area: toggle;
+        }
+
+        .menu-hoofdmenu-container {
+            display: none;
+            width: 100%;
+            list-style: none;
+            background-color: $color__background-body;
+            color: $color__text-main;
+            font-family: TheSans;
+            grid-area: "menu";
+    
+    
+            li a{
+                width: 100%;
+                padding: 2rem;
+            }
+        }
+    
+        &.toggled{
+            .menu-hoofdmenu-container {
+                display: block
+            }
+        }
+    }
+}
